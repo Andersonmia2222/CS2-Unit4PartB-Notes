@@ -10,11 +10,38 @@ public class Main {
       int regularInt = fancierInt;
       System.out.println(Integer.MIN_VALUE);
       System.out.println( Integer.MAX_VALUE);
-      String steingNums = "11.0";
+      String stringyNums = "11.0";
       double pardedD = Double.parseDouble(stringyNums);
       System.out.println(pardedD);
+      String stringNums2 = "11";
       int parsedI = Integer.parseInt(stringNums2)
       System.out.println(parsedI);
+
+//4.8 arraylist
+/* arraylist is a resize collection
+you can add or remove items from list
+arraylist is mutable (can change during run) */
+      //array list<type> name = new ArrayList<Type>();
+   ArrayList<String> toDo = new ArrayList<String>();
+   // for numbers, must use wrapper classes
+   ArrayList<Integer> intList =new ArrayList<Integer>()
+   ArrayList<Double> doubleList = new ArrayList<Double>();
+
+   //counts amount of items to see list 
+   int numTasks = toDo.size();
+   System.out.println("Number of items on To Do list + numTasks");
+      toDo.add("Buy apples");
+      toDo.add("Buy eggs");
+      toDo.add("Buy oranges");
+      //check size after adding stuff
+      System.out.println("Number of items after adding:" + toDo.size() );
+      System.out.println(toDo); // ArrayList has a nice toString method
+      // list.add( index, obj) inserts the ob)
+      // AT a specific INDEX!! (posisiton)
+   toDO.add( 1, "Buy garlic");
+   System.out.println( toDo);
+   // remember that indexes start at zero
+   // so one means we added to second spot      
 
    }
 }
