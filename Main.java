@@ -41,7 +41,31 @@ arraylist is mutable (can change during run) */
    toDO.add( 1, "Buy garlic");
    System.out.println( toDo);
    // remember that indexes start at zero
-   // so one means we added to second spot      
+   // so one means we added to second spot 
+   
+   
+// list.get( int idex) returns the items 
+//at that specified index
+String firstItem = toDo.get(0);
+// return type matches what the ArrayList holds 
+System.out.println("Do this first: " + firstItem);
+
+// list.set(int index, obj newItem)
+// replaces item at the index with new one
+String replaceItem = toDo set(0, "Finish Hw");
+System.out.println(toDo);
+System.out.println("We replaced:" + replaceItem);
+String removedItem = toDo.remove(2);
+System.out.println( toDo);
+System.out.println('We removed the item:' + removedItem);
+
+
+
+
+
+
+
+
 
    }
 }
