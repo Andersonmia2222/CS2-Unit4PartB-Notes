@@ -58,7 +58,28 @@ System.out.println("We replaced:" + replaceItem);
 String removedItem = toDo.remove(2);
 System.out.println( toDo);
 System.out.println('We removed the item:' + removedItem);
+ 
+ // 4.9 arraylist transversal 
+ ArrayList<Integer> scores = new ArrayList< Integer>();
+ scores.add(22);
+ scores.add(45);
+ scores.add(78);
+ System.out.println(scores);
 
+ //enhanced for each loop
+// to "visit" every item in order
+// doesn't keep track of current index
+for( Integer currentScore : scores ) {
+System.out.printl("Test Score: " + currentScore);
+}
+// typical example: count all items 
+double sum = 0;
+for ( Integer score : scores){
+   sum = sum + score; // or sum += score;
+}
+
+double avg = sum / scores.size();
+System.out.println("Test Adverage " + avg);
 
 
 
