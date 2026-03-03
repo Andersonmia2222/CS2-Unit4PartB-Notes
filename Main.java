@@ -81,7 +81,38 @@ for ( Integer score : scores){
 double avg = sum / scores.size();
 System.out.println("Test Adverage " + avg);
 
+// Standard for loop: when you need to keep
+// track of current index(position)
+// like if you want to use a method(set, get, ect)
+for(int i = 0; i < scores.size(); i++ ) {
+   int currentItem = scores.get(i);
+   int curvedScore = currentItem + 100;
+   scores.set(i, curvedScore);
 
+}
+System.out.println(scores);
+
+ArrayList<String> groceries = new ArrayList<String>();
+groceries.add("apple");
+groceries.add("Butter");
+groceries.add("orange");
+groceries.add("pasta");
+boolean found = false;
+int index = 0;
+while ( index < groceries.size() && found = false ){
+   if ( "apple".equals( groceries.get(index) ) ) {
+      groceries.remove(index);
+      found = true;
+
+   }
+   else{
+      index++;
+
+
+   }
+
+}
+System.out.println(groceries);
 
 
 
